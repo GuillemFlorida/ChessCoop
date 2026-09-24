@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f15abf638562dae4c9c1f8b14a6a9943
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 386602
+  packageName: Third Person Controller - Shoulder Cam
+  packageVersion: 1.0
+  assetPath: Assets/ZeftarimAssets/ThirdPerson/Animations/Animations/Idle_Loop.anim
+  uploadId: 951000

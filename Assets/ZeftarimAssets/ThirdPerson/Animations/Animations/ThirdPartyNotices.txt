@@ -1,0 +1,17 @@
+========================================================================
+THIRD-PARTY ASSET ATTRIBUTION
+========================================================================
+
+This project uses third-party assets that are distributed under their 
+own respective licenses.
+
+1. Animations (Universal Animation Library)
+   Creator: @Quaternius
+   License: CC0 1.0 Universal (Public Domain Dedication)
+   Source: https://quaternius.com/animviewer.html
+
+   Consider supporting the original author:
+   Patreon: https://www.patreon.com/quaternius
+   Discord: https://discord.gg/vJqnRUYRfT
+
+========================================================================

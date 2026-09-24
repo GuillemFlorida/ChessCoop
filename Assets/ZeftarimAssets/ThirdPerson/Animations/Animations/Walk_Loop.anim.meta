@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fb51a89f98ec8d846869d1c05afd04b2
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 386602
+  packageName: Third Person Controller - Shoulder Cam
+  packageVersion: 1.0
+  assetPath: Assets/ZeftarimAssets/ThirdPerson/Animations/Animations/Walk_Loop.anim
+  uploadId: 951000

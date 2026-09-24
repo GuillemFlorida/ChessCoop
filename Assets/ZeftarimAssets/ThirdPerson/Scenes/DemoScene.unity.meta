@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f0bc8e5dae69f5748919a3bcb7e48f3f
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 386602
+  packageName: Third Person Controller - Shoulder Cam
+  packageVersion: 1.0
+  assetPath: Assets/ZeftarimAssets/ThirdPerson/Scenes/DemoScene.unity
+  uploadId: 951000

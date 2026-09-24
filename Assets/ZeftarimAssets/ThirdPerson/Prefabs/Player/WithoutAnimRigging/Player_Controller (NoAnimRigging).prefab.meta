@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8036edc850dc210429b5db9c5bc9dbcc
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 386602
+  packageName: Third Person Controller - Shoulder Cam
+  packageVersion: 1.0
+  assetPath: Assets/ZeftarimAssets/ThirdPerson/Prefabs/Player/WithoutAnimRigging/Player_Controller
+    (NoAnimRigging).prefab
+  uploadId: 951000

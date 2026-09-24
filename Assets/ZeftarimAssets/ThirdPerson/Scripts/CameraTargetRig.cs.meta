@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: bd3f2f013be71bf4599cbcfadeb5a05c
+AssetOrigin:
+  serializedVersion: 1
+  productId: 386602
+  packageName: Third Person Controller - Shoulder Cam
+  packageVersion: 1.0
+  assetPath: Assets/ZeftarimAssets/ThirdPerson/Scripts/CameraTargetRig.cs
+  uploadId: 951000
