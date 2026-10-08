@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 00000000000000000000000000000000
+  productGUID: 3ac1ce18776f53a4d811cb0bc1d352fe
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -928,7 +928,7 @@ PlayerSettings:
   cloudProjectId: fdad9fde-1069-47e0-b9d7-a837559f87d6
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: ThirPersonTemplate
+  projectName: ChessCoop
   organizationId: guillemrenau
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
