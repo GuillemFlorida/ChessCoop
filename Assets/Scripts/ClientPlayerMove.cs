@@ -21,7 +21,7 @@ namespace NetcodeDemo
         {
             m_PlayerInput.enabled = false;
             m_ThirdPersonController.enabled = false;
-            m_CharacterController.enabled = false;
+            //m_CharacterController.enabled = false;
         }
 
         public override void OnNetworkSpawn()
@@ -90,7 +90,7 @@ namespace NetcodeDemo
             {
                 enabled = false;
                 m_PlayerInput.enabled = false;
-                m_CharacterController.enabled = false;
+                //m_CharacterController.enabled = false;
                 m_ThirdPersonController.enabled = false;
             }
             else
