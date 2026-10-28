@@ -12,6 +12,7 @@ public class ShootNetwork : NetworkBehaviour
     [SerializeField] private Transform shootPoint;
     [SerializeField] private Transform playerArmature;
     [SerializeField] private float shootRange = 100.0f;
+    [SerializeField] private int shootDamage = 40;   
 
     private void Awake()
     {
@@ -45,6 +46,11 @@ public class ShootNetwork : NetworkBehaviour
     {   
         if(Physics.Raycast(shootPoint.position, playerArmature.forward,out RaycastHit hit, shootRange))
         {
+            Health vida = hit.collider.GetComponent<Health>();
+            if (vida != null)
+            {
+                vida.QuitarVida(shootDamage);
+            }
            
             NetworkObject networkObject = hit.collider.GetComponent<NetworkObject>();
             if (networkObject != null)
