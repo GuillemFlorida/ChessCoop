@@ -5,9 +5,11 @@ using Unity.Netcode;
 public class EnemySpawner : NetworkBehaviour
 {
     public List<NetworkObject> listaPrefabsEnemigos;
+    public LayerMask capaGround;
 
     public override void OnNetworkSpawn()
     {
+        if (!IsOwner) return; 
         EventManager.onbuttonpressed += PedirSpawn;
     }
 
@@ -15,9 +17,15 @@ public class EnemySpawner : NetworkBehaviour
     {
         EventManager.onbuttonpressed -= PedirSpawn;
     }
+
     public void PedirSpawn()
     {
-        SpawnEnServidorRpc(0, transform.position);
+        Ray rayo = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        if (Physics.Raycast(rayo, out RaycastHit golpe, 1000f, capaGround))
+        {
+            SpawnEnServidorRpc(0, golpe.point);
+        }
     }
 
     [Rpc(SendTo.Server)]
@@ -26,6 +34,10 @@ public class EnemySpawner : NetworkBehaviour
         NetworkObject prefabElegido = listaPrefabsEnemigos[indice];
 
         NetworkObject enemigoInstanciado = Instantiate(prefabElegido, posicion, Quaternion.identity);
+
+        Transform pies = enemigoInstanciado.transform.Find("Pies");
+        enemigoInstanciado.transform.position += posicion - pies.position;
+
         enemigoInstanciado.Spawn();
     }
 }

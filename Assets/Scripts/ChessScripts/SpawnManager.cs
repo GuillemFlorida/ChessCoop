@@ -10,8 +10,9 @@ public class SpawnManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetMouseButtonDown(0))
         {
+            Debug.Log("1. Clic detectado en SpawnManager");
             EventManager.onbuttonpressed?.Invoke();
         }
     }
