@@ -10,6 +10,7 @@ public class EnemyBehaviour : NetworkBehaviour
     public float range = 3f;
     public float cooldown = 1f;
     private float nextAttackTime = 0f;
+    public float cost = 10f;
 
 
 
