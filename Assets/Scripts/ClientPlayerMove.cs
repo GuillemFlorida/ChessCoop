@@ -15,7 +15,7 @@ namespace NetcodeDemo
         [Header("Cinemachine")]
         [Tooltip("The follow target set in the Cinemachine Virtual Camera that the camera will follow")]
         public GameObject CinemachineCameraTarget;
-        private const string GameSceneName = "MainScene";
+        [SerializeField] private string GameSceneName = "GameTests";
 
         private void Awake()
         {

@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5675798048838628681}
   - component: {fileID: 3713123231340890014}
   - component: {fileID: 439172193531455167}
-  - component: {fileID: -138538405654349438}
   - component: {fileID: -3994276430962462743}
+  - component: {fileID: -138538405654349438}
   m_Layer: 0
   m_Name: Caja
   m_TagString: Untagged
@@ -114,19 +114,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-138538405654349438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 795571394768938639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdaf69e75df7bf0449664feacbe74a73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Health
-  vida: 40
 --- !u!114 &-3994276430962462743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,3 +139,17 @@ MonoBehaviour:
   AutoObjectParentSync: 1
   SyncOwnerTransformWhenParented: 1
   AllowOwnerToParent: 0
+--- !u!114 &-138538405654349438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795571394768938639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdaf69e75df7bf0449664feacbe74a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  ShowTopMostFoldoutHeaderGroup: 1
+  vida: 40

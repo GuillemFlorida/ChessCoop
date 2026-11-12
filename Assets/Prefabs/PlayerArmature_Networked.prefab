@@ -220,6 +220,7 @@ MonoBehaviour:
   m_ThirdPersonController: {fileID: 7237260631357456228}
   m_PlayerInput: {fileID: 7237260631357456227}
   CinemachineCameraTarget: {fileID: 3069749632420480564}
+  GameSceneName: GameTests
 --- !u!114 &1755703202907892443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,7 +321,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ShootNetwork
   ShowTopMostFoldoutHeaderGroup: 1
   shootPoint: {fileID: 8707029395299628456}
-  playerArmature: {fileID: 8008590494299497941}
   shootRange: 100
   shootDamage: 40
   lineRenderer: {fileID: -562746765267186922}
@@ -467,8 +467,3 @@ MonoBehaviour:
   capaGround:
     serializedVersion: 2
     m_Bits: 256
---- !u!4 &8008590494299497941 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
-  m_PrefabInstance: {fileID: 6423251192683083198}
-  m_PrefabAsset: {fileID: 0}

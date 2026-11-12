@@ -3,7 +3,7 @@ using Unity.Netcode;
 
 public class MatchManager : MonoBehaviour
 {
-    private const string GameSceneName = "MainScene";
+    private const string GameSceneName = "GameTests";
     void Start()
     {
         NetworkManager.Singleton.SceneManager.OnSceneEvent += HandleSceneEvents;

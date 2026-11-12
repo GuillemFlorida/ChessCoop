@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class LobbyManager : MonoBehaviour
 {
-    private const string GameSceneName = "MainScene";
+    private const string GameSceneName = "GameTests";
 
     void Update()
     {

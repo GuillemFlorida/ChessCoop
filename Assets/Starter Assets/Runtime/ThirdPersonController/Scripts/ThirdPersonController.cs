@@ -159,6 +159,8 @@ namespace StarterAssets
             JumpAndGravity();
             GroundedCheck();
             Move();
+
+            RotatePlayerTowardsCamera();
         }
 
         private void LateUpdate()
@@ -372,6 +374,26 @@ namespace StarterAssets
             Gizmos.DrawSphere(
                 new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z),
                 GroundedRadius);
+        }
+
+        void RotatePlayerTowardsCamera()
+        {
+            Vector3 cameraForward = Camera.main.transform.forward;
+
+            // Ignorar la inclinación vertical de la cámara
+            cameraForward.y = 0;
+
+            // Evitar errores si el vector es demasiado pequeño
+            if (cameraForward.sqrMagnitude < 0.001f)
+                return;
+
+            Quaternion targetRotation = Quaternion.LookRotation(cameraForward);
+
+            transform.rotation = Quaternion.Slerp(
+                transform.rotation,
+                targetRotation,
+                20f * Time.deltaTime
+            );
         }
 
         private void OnFootstep(AnimationEvent animationEvent)
