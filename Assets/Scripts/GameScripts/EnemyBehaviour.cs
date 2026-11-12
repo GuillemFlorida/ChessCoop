@@ -11,6 +11,7 @@ public class EnemyBehaviour : NetworkBehaviour
     public float cooldown = 1f;
     private float nextAttackTime = 0f;
     public float cost = 10f;
+    public ulong targetPlayerId;
 
 
 
@@ -23,7 +24,7 @@ public class EnemyBehaviour : NetworkBehaviour
         
         if (player == null)
         {
-            GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+            NetworkObject playerObj = NetworkManager.Singleton.ConnectedClients[targetPlayerId].PlayerObject;//GameObject.FindGameObjectWithTag("Player");
             if (playerObj != null)
             {
                 player = playerObj.transform;

@@ -24,16 +24,30 @@ public class EnemySpawner : NetworkBehaviour
 
         if (Physics.Raycast(rayo, out RaycastHit golpe, 1000f, capaGround))
         {
-            SpawnEnServidorRpc(0, golpe.point);
+            ulong playerid = 0;
+
+            foreach (var player in NetworkManager.Singleton.ConnectedClients)
+            {
+               playerid = player.Key;
+
+                if(playerid != NetworkManager.Singleton.LocalClientId)
+                {
+                    break;
+                }
+            }
+
+            SpawnEnServidorRpc(0, golpe.point,playerid);
         }
     }
 
     [Rpc(SendTo.Server)]
-    void SpawnEnServidorRpc(int indice, Vector3 posicion)
+    void SpawnEnServidorRpc(int indice, Vector3 posicion, ulong playerid)
     {
         NetworkObject prefabElegido = listaPrefabsEnemigos[indice];
 
         NetworkObject enemigoInstanciado = Instantiate(prefabElegido, posicion, Quaternion.identity);
+
+        enemigoInstanciado.GetComponent<EnemyBehaviour>().targetPlayerId = playerid;
 
         Transform pies = enemigoInstanciado.transform.Find("Pies");
         enemigoInstanciado.transform.position += posicion - pies.position;
